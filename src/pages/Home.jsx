@@ -10,44 +10,48 @@ import { Link } from "react-router-dom";
 const Home = () => {
   const features = [
     {
-      title: "Seamless Integration",
-      desc: "Connect your favorite tools with just a few clicks.",
+      title: "Integração Sem Esforço",
+      desc: "Conecte suas ferramentas favoritas com apenas alguns cliques.",
       icon: cubeIcon,
     },
     {
-      title: "Real-Time Analytics",
-      desc: "Get instant insights with interactive dashboards.",
+      title: "Análises em Tempo Real",
+      desc: "Obtenha insights instantâneos com dashboards interativos.",
       icon: chartIcon,
     },
     {
-      title: "Scalable Infrastructure",
-      desc: "Grow without limits thanks to our elastic cloud.",
+      title: "Infraestrutura Escalável",
+      desc: "Cresça sem limites graças à nossa nuvem elástica.",
       icon: cloudIcon,
     },
   ];
 
   const pricing = [
     {
-      plan: "Free",
-      price: "$0",
-      desc: "Perfect to get started.",
-      features: ["1 project", "Community support", "Basic analytics"],
+      plan: "Grátis",
+      price: "R$0",
+      desc: "Perfeito para começar.",
+      features: ["1 projeto", "Suporte da comunidade", "Análises básicas"],
     },
     {
       plan: "Pro",
-      price: "$19/mo",
-      desc: "For growing teams.",
+      price: "R$99/mês",
+      desc: "Para equipes em crescimento.",
       features: [
-        "Unlimited projects",
-        "Priority support",
-        "Advanced analytics",
+        "Projetos ilimitados",
+        "Suporte prioritário",
+        "Análises avançadas",
       ],
     },
     {
-      plan: "Enterprise",
+      plan: "Empresarial",
       price: "Custom",
-      desc: "Tailored to your needs.",
-      features: ["Account manager", "Custom integrations", "24/7 support"],
+      desc: "Sob medida para suas necessidades.",
+      features: [
+        "Gerente de conta",
+        "Integrações personalizadas",
+        "Suporte 24/7",
+      ],
     },
   ];
 
@@ -61,7 +65,7 @@ const Home = () => {
           transition={{ duration: 0.6 }}
           className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight"
         >
-          Supercharge your workflow with{" "}
+          Potencialize seu fluxo de trabalho com{" "}
           <span className="text-blue-600">FlowSync</span>
         </motion.h1>
 
@@ -71,8 +75,8 @@ const Home = () => {
           transition={{ delay: 0.3, duration: 0.6 }}
           className="max-w-2xl mx-auto text-base sm:text-lg text-gray-600 mb-8 px-2"
         >
-          The all-in-one SaaS platform to manage, analyze, and grow your
-          business faster.
+          A plataforma SaaS tudo-em-um para gerenciar, analisar e expandir seu
+          negócio mais rápido.
         </motion.p>
 
         <motion.div
@@ -82,10 +86,10 @@ const Home = () => {
           className="flex flex-col sm:flex-row justify-center gap-4"
         >
           <button className="px-6 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition">
-            Start Free Trial
+            Comece o Teste Grátis
           </button>
           <button className="px-6 py-3 border border-gray-300 rounded-xl font-semibold hover:border-gray-400 transition">
-            Learn More
+            Saiba Mais
           </button>
         </motion.div>
       </Section>
@@ -93,7 +97,7 @@ const Home = () => {
       {/* FEATURES */}
       <Section className="py-20 bg-gray-50">
         <h2 className="text-3xl font-bold text-center mb-12">
-          Why choose FlowSync?
+          Por que escolher o FlowSync?
         </h2>
         <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
           {features.map((f, i) => (
@@ -115,7 +119,7 @@ const Home = () => {
 
       {/* PRICING */}
       <Section className="py-20">
-        <h2 className="text-3xl font-bold text-center mb-12">Simple Pricing</h2>
+        <h2 className="text-3xl font-bold text-center mb-12">Preços Simples</h2>
         <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
           {pricing.map((p, i) => (
             <motion.div
@@ -141,14 +145,13 @@ const Home = () => {
                 ))}
               </ul>
               <button className="px-6 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition">
-                Choose {p.plan}
+                Escolher {p.plan}
               </button>
             </motion.div>
           ))}
         </div>
       </Section>
 
-      {/* CTA */}
       {/* CTA */}
       <Section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center rounded-2xl">
         <motion.h2
@@ -157,7 +160,7 @@ const Home = () => {
           transition={{ duration: 0.6 }}
           className="text-4xl  font-bold text-center mb-12"
         >
-          Ready to transform the way you work?
+          Pronto para transformar sua forma de trabalhar?
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}
@@ -165,8 +168,8 @@ const Home = () => {
           transition={{ delay: 0.3, duration: 0.6 }}
           className="max-w-2xl mx-auto mb-8 text-lg text-blue-900"
         >
-          Start your free trial today and see why thousands of teams rely on
-          FlowSync.
+          Comece seu teste grátis hoje e descubra por que milhares de equipes
+          confiam no FlowSync.
         </motion.p>
         <motion.div
           initial={{ opacity: 0 }}
@@ -175,10 +178,10 @@ const Home = () => {
           className="flex justify-center gap-4"
         >
           <button className="px-8 py-4 bg-white text-blue-600 rounded-xl font-semibold hover:bg-gray-100 transition">
-            Start Free Trial
+            Comece o Teste Grátis
           </button>
           <button className="px-8 py-4 bg-blue-500 text-white border border-white rounded-xl font-semibold hover:bg-blue-400 transition">
-            Book a Demo
+            Agende uma Demonstração
           </button>
         </motion.div>
       </Section>
@@ -190,7 +193,7 @@ const Home = () => {
           <div className="text-center md:text-left">
             <h2 className="text-2xl font-bold text-blue-600">FlowSync</h2>
             <p className="text-gray-500 text-sm mt-1">
-              Empowering your workflow with simplicity ✨
+              Simplificando seu fluxo de trabalho ✨
             </p>
           </div>
 
@@ -224,7 +227,7 @@ const Home = () => {
 
         {/* Bottom note */}
         <div className="border-t border-gray-200 text-center py-4 text-sm text-gray-500">
-          © {new Date().getFullYear()} FlowSync. All rights reserved.
+          © {new Date().getFullYear()} FlowSync. Todos os direitos reservados.
         </div>
       </footer>
     </div>

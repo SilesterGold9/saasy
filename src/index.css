@@ -2,7 +2,7 @@
 
 /* Optional: theme overrides */
 @theme {
-  --color-primary: #6366f1;
+  --color-primary: #6336f1;
 }
 body {
   @apply font-sans;
