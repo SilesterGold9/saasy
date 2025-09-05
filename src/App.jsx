@@ -17,9 +17,9 @@ const App = () => {
         </Routes>
       </main>
 
-      <footer className="p-4 text-center text-sm text-slate-500">
+      {/* <footer className="p-4 text-center text-sm text-slate-500">
         © {new Date().getFullYear()} My Project. All rights reserved.
-      </footer>
+      </footer> */}
     </div>
   );
 };
